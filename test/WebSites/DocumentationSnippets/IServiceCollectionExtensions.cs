@@ -9,7 +9,7 @@ public static class IServiceCollectionExtensions
     public static void Configure(this IServiceCollection services)
     {
         // begin-snippet: README-Newtonsoft.Json
-        services.AddMvc();
+        services.AddControllers();
 
         services.AddSwaggerGen(options =>
         {

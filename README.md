@@ -91,7 +91,7 @@ using Microsoft.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddMvc();
+builder.Services.AddControllers();
 
 builder.Services.AddSwaggerGen(options =>
 {
@@ -201,7 +201,7 @@ dotnet add package Swashbuckle.AspNetCore.Newtonsoft
 <!-- snippet: README-Newtonsoft.Json -->
 <a id='snippet-README-Newtonsoft.Json'></a>
 ```cs
-services.AddMvc();
+services.AddControllers();
 
 services.AddSwaggerGen(options =>
 {
